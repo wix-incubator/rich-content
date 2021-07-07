@@ -72,6 +72,23 @@ const commonConfig = (output: OutputOptions[], shouldExtractCss: boolean): Rollu
     });
   }
 
+  const viewerLoadableOutput: OutputOptions[] = [
+    {
+      dir: 'dist/loadable/viewer',
+      format: 'es',
+      chunkFileNames: '[name].js',
+    },
+  ];
+
+  const viewerLoadablePath = 'src/viewer-loadable.ts';
+  if (existsSync(`./${viewerLoadablePath}`)) {
+    viewerEntry.push({
+      input: viewerLoadablePath,
+      output: viewerLoadableOutput,
+      ...commonOptions,
+    });
+  }
+
   let entries;
   if (process.env.MODULE_ANALYZE_EDITOR) {
     entries = [editorEntry, ...libEntries];

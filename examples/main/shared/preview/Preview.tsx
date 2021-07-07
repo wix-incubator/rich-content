@@ -6,8 +6,8 @@ import theme from '../theme/theme'; // must import after custom styles
 import 'wix-rich-content-preview/dist/styles.min.css';
 import getImagesData from 'wix-rich-content-fullscreen/libs/getImagesData';
 import Fullscreen from 'wix-rich-content-fullscreen';
-import { GALLERY_TYPE } from 'wix-rich-content-plugin-gallery/viewer';
-import { IMAGE_TYPE } from 'wix-rich-content-plugin-image/viewer';
+import { GALLERY_TYPE } from 'wix-rich-content-plugin-gallery/loadable/viewer';
+import { IMAGE_TYPE } from 'wix-rich-content-plugin-image/loadable/viewer';
 
 const anchorTarget = '_top';
 const relValue = 'noreferrer';

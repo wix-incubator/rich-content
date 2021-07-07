@@ -5,6 +5,7 @@ import TestApp from './TestApp';
 import IsolatedTestApp from './IsolatedTestApp';
 import RicosTestApp from './RicosTestApp';
 import PreviewTestApp from './PreviewTestApp';
+import { loadableReady } from '@loadable/component';
 
 import './app.css';
 import { TestAppConfig } from '../../../../examples/main/src/types';
@@ -23,10 +24,12 @@ const props = {
   testAppConfig: window.testAppConfig,
 };
 
-hydrate(
-  <RichContentApp app={compMap[window.compId]} mode={'test'} {...props} />,
-  document.getElementById('root')
-);
+loadableReady(() => {
+  hydrate(
+    <RichContentApp app={compMap[window.compId]} mode={'test'} {...props} />,
+    document.getElementById('root')
+  );
+});
 
 declare global {
   interface Window {

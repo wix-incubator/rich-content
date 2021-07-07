@@ -1,5 +1,5 @@
 import theme from '../theme/theme';
-import { VIDEO_TYPE, videoTypeMapper } from 'wix-rich-content-plugin-video/viewer';
+import { VIDEO_TYPE, videoTypeMapper } from 'wix-rich-content-plugin-video/loadable/viewer';
 import { dividerTypeMapper } from 'wix-rich-content-plugin-divider/viewer';
 import { htmlTypeMapper } from 'wix-rich-content-plugin-html/viewer';
 import { soundCloudTypeMapper } from 'wix-rich-content-plugin-sound-cloud/viewer';
@@ -8,9 +8,9 @@ import {
   LINK_PREVIEW_TYPE,
   linkPreviewTypeMapper,
 } from 'wix-rich-content-plugin-link-preview/viewer';
-import { imageTypeMapper } from 'wix-rich-content-plugin-image/viewer';
-import { galleryTypeMapper, GALLERY_TYPE } from 'wix-rich-content-plugin-gallery/viewer';
-import { mapTypeMapper } from 'wix-rich-content-plugin-map/viewer';
+import { imageTypeMapper } from 'wix-rich-content-plugin-image/loadable/viewer';
+import { galleryTypeMapper, GALLERY_TYPE } from 'wix-rich-content-plugin-gallery/loadable/viewer';
+import { mapTypeMapper } from 'wix-rich-content-plugin-map/loadable/viewer';
 import { giphyTypeMapper, GIPHY_TYPE } from 'wix-rich-content-plugin-giphy/viewer';
 import { buttonTypeMapper } from 'wix-rich-content-plugin-button/viewer';
 import { HashtagDecorator } from 'wix-rich-content-plugin-hashtag/viewer';
@@ -122,8 +122,7 @@ export const config = {
     resolveFileUrl: () =>
       new Promise(resolve =>
         setTimeout(
-          () =>
-            resolve('https://www.w3.org/wai/er/tests/xhtml/testfiles/resources/pdf/dummy.pdf'),
+          () => resolve('https://www.w3.org/wai/er/tests/xhtml/testfiles/resources/pdf/dummy.pdf'),
           1000
         )
       ),

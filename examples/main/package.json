@@ -7,6 +7,7 @@
     "email": "jonathanb@wix.com"
   },
   "dependencies": {
+    "@loadable/component": "^5.14.1",
     "casual-browserify": "1.5.19-2",
     "local-storage": "2.0.0",
     "mobile-detect": "^1.4.1",
@@ -68,6 +69,7 @@
     "analyze": "npm run build -- --progress --env.analyzeBundle"
   },
   "devDependencies": {
+    "@loadable/webpack-plugin": "^5.15.0",
     "babel-plugin-preval": "^3.0.1",
     "dotenv-webpack": "^1.7.0",
     "happypack": "^5.0.1",

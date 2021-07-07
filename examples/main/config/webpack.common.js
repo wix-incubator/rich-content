@@ -3,6 +3,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const DotenvWebpackPlugin = require('dotenv-webpack');
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 const HappyPack = require('happypack');
+const LoadablePlugin = require('@loadable/webpack-plugin');
 
 const PATHS = {
   monorepo_root: path.join(__dirname, '..', '..', '..'),
@@ -136,6 +137,7 @@ module.exports = env => ({
         charset: 'utf-8',
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no',
       },
+      chunksSortMode: 'none',
     }),
     new DotenvWebpackPlugin({
       path: path.resolve(PATHS.monorepo_root, '.env'),
@@ -182,5 +184,6 @@ module.exports = env => ({
         },
       ],
     }),
+    new LoadablePlugin(),
   ],
 });

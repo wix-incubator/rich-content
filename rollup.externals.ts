@@ -27,6 +27,7 @@ const externals = [
   /^ricos-content$/,
   /^ricos-content\/libs\/toDraftData$/,
   /^react-player$/,
+  /^@loadable\/component$/,
 ];
 
 const excludedExternalsRegexArr = [

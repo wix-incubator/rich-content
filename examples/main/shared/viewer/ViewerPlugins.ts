@@ -1,5 +1,9 @@
 import theme from '../theme/theme';
-import { videoTypeMapper, VIDEO_TYPE, pluginVideo } from 'wix-rich-content-plugin-video/viewer';
+import {
+  videoTypeMapper,
+  VIDEO_TYPE,
+  pluginVideo,
+} from 'wix-rich-content-plugin-video/loadable/viewer';
 import { dividerTypeMapper, pluginDivider } from 'wix-rich-content-plugin-divider/viewer';
 import { htmlTypeMapper, pluginHtml } from 'wix-rich-content-plugin-html/viewer';
 import { soundCloudTypeMapper, pluginSoundCloud } from 'wix-rich-content-plugin-sound-cloud/viewer';
@@ -9,15 +13,15 @@ import {
   LINK_PREVIEW_TYPE,
   pluginLinkPreview,
 } from 'wix-rich-content-plugin-link-preview/viewer';
-import { imageTypeMapper, pluginImage } from 'wix-rich-content-plugin-image/viewer';
+import { imageTypeMapper, pluginImage } from 'wix-rich-content-plugin-image/loadable/viewer';
 import { tableTypeMapper, pluginTable } from 'wix-rich-content-plugin-table/viewer';
 
 import {
   galleryTypeMapper,
   pluginGallery,
   GALLERY_TYPE,
-} from 'wix-rich-content-plugin-gallery/viewer';
-import { mapTypeMapper, pluginMap } from 'wix-rich-content-plugin-map/viewer';
+} from 'wix-rich-content-plugin-gallery/loadable/viewer';
+import { mapTypeMapper, pluginMap } from 'wix-rich-content-plugin-map/loadable/viewer';
 import { giphyTypeMapper, pluginGiphy, GIPHY_TYPE } from 'wix-rich-content-plugin-giphy/viewer';
 import {
   buttonTypeMapper,

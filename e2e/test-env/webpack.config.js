@@ -2,6 +2,7 @@ const nodeExternals = require('webpack-node-externals');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HappyPack = require('happypack');
 const path = require('path');
+const LoadablePlugin = require('@loadable/webpack-plugin');
 
 const output = {
   path: path.resolve(__dirname, 'dist/'),
@@ -87,7 +88,7 @@ const config = [
       index: './src/client/index',
     },
     output,
-    plugins: [happyPackPlugin],
+    plugins: [happyPackPlugin, new LoadablePlugin()],
     module: {
       rules: [
         babelRule,
@@ -115,13 +116,14 @@ const config = [
       publicPath: '/static/',
     },
     target: 'node',
-    externals: [nodeExternals({ whitelist: [/.css/, /^wix-rich-content/] })],
+    externals: ['@loadable/component', nodeExternals({ whitelist: [/.css/, /^wix-rich-content/] })],
     plugins: [
       new MiniCssExtractPlugin({
         filename: '[name].css',
         chunkFilename: '[id].css',
       }),
       happyPackPlugin,
+      new LoadablePlugin(),
     ],
     module: {
       rules: [

@@ -11,6 +11,8 @@
     "start": "node --max-http-header-size=1000000 ./src/server"
   },
   "dependencies": {
+    "@loadable/component": "^5.14.1",
+    "@loadable/server": "^5.14.1",
     "casual-browserify": "1.5.19-2",
     "deep-freeze": "0.0.1",
     "express": "^4.17.1",

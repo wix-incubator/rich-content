@@ -17,7 +17,8 @@
   "files": [
     "dist",
     "libs",
-    "viewer"
+    "viewer",
+    "loadable"
   ],
   "main": "dist/module.cjs.js",
   "types": "dist/src/index.d.ts",

@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="/renderer.css" />
     <title>Rich Content Test Env</title>
+    <%- loadableLinkTags %> <%- loadableStyleTags %>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
@@ -11,7 +12,7 @@
 
   <body>
     <div id="root"><%- html %></div>
-
+    <%- loadableScriptTags %>
     <script>
       window.__CONTENT_STATE__ = <%- serialize(initialState) %>;
       window.isMobile = <%- isMobile %>;

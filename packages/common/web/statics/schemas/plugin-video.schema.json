@@ -9,7 +9,32 @@
             "$id": "/properties/src",
             "type": "string",
             "title": "Video Source URL",
+            "pattern": "youtube\\.com/(embed/|v/|watch\\?(.*&)?v=)(\\w|-){11}(&.*)?$",
             "examples": ["https://www.youtube.com/watch?v=eqZVIiD6wSg"]
+          },
+          {
+            "$id": "/properties/src",
+            "type": "string",
+            "title": "Video Source URL",
+            "pattern": "youtu\\.be/(\\w|-){11}(\\?.*)?$"
+          },
+          {
+            "$id": "/properties/src",
+            "type": "string",
+            "title": "Video Source URL",
+            "pattern": "facebook\\.com\\/([^/?].+\\/)?video(s|\\.php)[/?].*$"
+          },
+          {
+            "$id": "/properties/src",
+            "type": "string",
+            "title": "Video Source URL",
+            "pattern": "(www\\.|player\\.)?vimeo.com\\/((channels|ondemand)\\/(\\w+\\/)?|groups\\/([^/]*)\\/videos\\/|album\\/(\\d+)\\/video\\/|video\\/|)(\\d+)($|\\/|\\?)"
+          },
+          {
+            "$id": "/properties/src",
+            "type": "string",
+            "title": "Video Source URL",
+            "pattern": "^video\\/.+\\/.+\\/mp4\\/file\\.mp4$"
           },
           {
             "$id": "/properties/src",
@@ -19,6 +44,7 @@
                 "$id": "/properties/src/pathname",
                 "type": "string",
                 "title": "Video Source Pathname",
+                "pattern": "^video\\/.+\\/.+\\/mp4\\/file\\.mp4$",
                 "examples": ["video-sample/jellyfish-25-mbps-hd-hevc.mp4"]
               },
               "thumbnail": {
@@ -29,6 +55,7 @@
                     "$id": "/properties/src/thumbnail/pathname",
                     "type": "string",
                     "title": "Video Thumbnail Pathname",
+                    "pattern": "^media\\/.+?\\.jpg$",
                     "examples": ["media/441c23_84f5c058e5e4479ab9e626cd5560a21bf002.jpg"]
                   },
                   "height": {
@@ -43,9 +70,18 @@
                     "title": "Video Thumbnail Width",
                     "examples": [1920]
                   }
-                }
+                },
+                "required": [
+                  "pathname",
+                  "height",
+                  "width"
+                ]
               }
-            }
+            },
+            "required": [
+              "pathname",
+              "thumbnail"
+            ]
           }
         ]
       },
@@ -86,4 +122,3 @@
     },
     "required": ["src"]
   }
-  

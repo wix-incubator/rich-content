@@ -12,7 +12,8 @@
           "line-height": "1",
           "padding-top": "0",
           "padding-bottom": "0"
-        }
+        },
+        "textAlignment": "justify"
       }
     },
     {
@@ -56,84 +57,6 @@
           "padding-bottom": "0"
         }
       }
-    },
-    {
-      "key": "23v9b",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "3ndmn",
-      "text": "Hola y Buenos! We send greetings from Mexico - wherxsxxsxe we have been accorded kindness and respect from amable people - a wonderful experience. On the other hand, photographing birds here has been difficult: we need light to shoot birds, but the warblers prefer to stay in the shade given the harsh tropical light, and do their best to forage in and out of conifer bundles - muy frustrado! We came specifically to this region because there is an overlap between western and eastern warblers in these mountains - about 30 warbler species can be found here November through March. We have seen many species we know well from the northeast including Black-throated Green as well as Black-and-white Warblers, plus local (non-migrants) such as Red Warbler, Olive Warbler and Slate-throated Redstart. We'll send photos of these birds in the next issue of this Newsletter. Central Mexico has a long history of study by North American ornithologists, including Frank Chapman of the American Museum in the 1890s: we follow in his footsteps...though the ancient conifer forests have been cut where those birds were formerly collected. However, in the National Parks at the tops of mountains, the forests are good - and so is the birding.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 1230,
-          "style": "{\"FG\":\"#040404\"}"
-        },
-        {
-          "offset": 0,
-          "length": 15,
-          "style": "BOLD"
-        },
-        {
-          "offset": 107,
-          "length": 6,
-          "style": "ITALIC"
-        },
-        {
-          "offset": 378,
-          "length": 13,
-          "style": "ITALIC"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "e1foa",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "4hp2o",
-      "text": "This week's historical note is about birding in Central Park in February 1982 - an excerpt from Donald Knowler's book, The Falconer of Central Park - available on Amazon for less than $10 (highly recommended).",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 209,
-          "style": "{\"FG\":\"#040404\"}"
-        },
-        {
-          "offset": 96,
-          "length": 16,
-          "style": "BOLD"
-        },
-        {
-          "offset": 119,
-          "length": 28,
-          "style": "BOLD"
-        },
-        {
-          "offset": 119,
-          "length": 28,
-          "style": "ITALIC"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
     },
     {
       "key": "e210k",
@@ -379,7 +302,7 @@
     },
     {
       "key": "e9mqc",
-      "text": "The fine print: Our walks on weekends meet at 9:30am at the Boathouse Restaurant (approx. 74th street and the East Drive) through mid-March 2020. Please note: the Boathouse is not one of the buildings that surround the nearby Model Boat Pond - people make this mistake all the time! We will be adding many more walks starting in late March (including Fridays/Saturdays and Mondays). \n",
+      "text": "The fine print: Our walks on weekends meet at 9:30am at the Boathouse Restaurant (approx. 74th street and the East Drive) through mid-March 2020. Please note: the Boathouse is not one of the buildings that surround the nearby Model Boat Pond - people make this mistake all the time! We will be adding many more walks starting in late March (including Fridays/Saturdays and Mondays). ",
       "type": "unstyled",
       "depth": 0,
       "inlineStyleRanges": [
@@ -395,12 +318,12 @@
         },
         {
           "offset": 16,
-          "length": 368,
+          "length": 367,
           "style": "{\"FG\":\"#040404\"}"
         },
         {
           "offset": 16,
-          "length": 368,
+          "length": 367,
           "style": "ITALIC"
         }
       ],
@@ -408,128 +331,13 @@
       "data": {}
     },
     {
-      "key": "7as6l",
-      "text": "Our home phone is 718-828-8262...and Deborah's cell is: 347-703-5554. Email is (rdcny@earthlink.net). If you are lost and trying to get to the bird walk, call Deborah's cell phone...but remember on weekends there will be 2-3 other people calling who are also lost - please be patient. If in doubt about whether a walk will take place or not the morning of the walk: check the main landing page of this web site as well as the \"Schedule\" page - if the walk is cancelled, information will be posted there by 6am the day of the walk, and usually by 11pm the night before. If still confused and as a last resort, call us at home - if no one answers it means we left for the bird walk. We end all our Central Park walks (except Fridays) at the Boathouse at about noon; you can get a cup of coffee and a muffin there (around $6 total). Walks last about 3 hrs (less if hot or rainy), and you can leave at anytime - we won't be offended. If you need directions/help to your next destination, just ask someone on the walk - we are a helpful group.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 284,
-          "style": "ITALIC"
-        },
-        {
-          "offset": 285,
-          "length": 395,
-          "style": "ITALIC"
-        },
-        {
-          "offset": 681,
-          "length": 177,
-          "style": "ITALIC"
-        },
-        {
-          "offset": 859,
-          "length": 178,
-          "style": "ITALIC"
-        },
-        {
-          "offset": 0,
-          "length": 80,
-          "style": "{\"FG\":\"#040404\"}"
-        },
-        {
-          "offset": 99,
-          "length": 939,
-          "style": "{\"FG\":\"#040404\"}"
-        },
-        {
-          "offset": 80,
-          "length": 19,
-          "style": "BOLD"
-        },
-        {
-          "offset": 80,
-          "length": 19,
-          "style": "UNDERLINE"
-        },
-        {
-          "offset": 80,
-          "length": 19,
-          "style": "{\"FG\":\"textColor2\"}"
-        }
-      ],
-      "entityRanges": [
-        {
-          "offset": 80,
-          "length": 19,
-          "key": 3
-        }
-      ],
-      "data": {
-        "textAlignment": "left"
-      }
-    },
-    {
-      "key": "equ9f",
+      "key": "cme75",
       "text": "",
       "type": "unstyled",
       "depth": 0,
       "inlineStyleRanges": [],
       "entityRanges": [],
       "data": {}
-    },
-    {
-      "key": "bd8bj",
-      "text": "Nesting Red-tailed Hawks in the Bronx in 2010",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 45,
-          "style": "ITALIC"
-        },
-        {
-          "offset": 0,
-          "length": 45,
-          "style": "{\"FG\":\"#626262\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {
-        "textAlignment": "right"
-      }
-    },
-    {
-      "key": "a6n1a",
-      "text": " ",
-      "type": "atomic",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [
-        {
-          "offset": 0,
-          "length": 1,
-          "key": 4
-        }
-      ],
-      "data": {}
-    },
-    {
-      "key": "elf10",
-      "text": "",
-      "type": "header-two",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {
-        "dynamicStyles": {
-          "line-height": "1",
-          "padding-top": "0",
-          "padding-bottom": "0"
-        }
-      }
     },
     {
       "key": "759g3",
@@ -724,180 +532,6 @@
       }
     },
     {
-      "key": "eonq7",
-      "text": "A  Shakespeare Garden abbiamo trovato un maschio di Eastern Towee (  trovato da Jaquie). Proseguendo per Turtle Pond, Mark ha avvistato un  giovane di Great Blue Heron",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {
-        "dynamicStyles": {
-          "line-height": "1",
-          "padding-top": "0",
-          "padding-bottom": "0"
-        }
-      }
-    },
-    {
-      "key": "12rch",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {
-        "dynamicStyles": {
-          "line-height": "1",
-          "padding-top": "0",
-          "padding-bottom": "0"
-        }
-      }
-    },
-    {
-      "key": "26q5u",
-      "text": "Abbiamo  poi raggiunto il Reservoir per trovare una femmina di Red-breasted  Merganser che abbiamo osservato bene dopo che ha reagito alla mia  chiamata, almeno 12 Bufflehead ( maschi e femmine ) , 1 Pie-billed  Greebe, probabilmente 100 ( o piu`) Shovelers che si muovevano in gruppo  e a cerchio come fanno di solito per muovere le acque e trovare piu`  facilmente crostacei per nutrirsi. E` affascinante osservare cosi tante  Shovelers muoversi contemporaneamente in cerchio ma e` difficilissimo  contarle…",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 334,
-          "length": 175,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {
-        "dynamicStyles": {
-          "line-height": "1",
-          "padding-top": "0",
-          "padding-bottom": "0"
-        }
-      }
-    },
-    {
-      "key": "eqrq9",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {
-        "dynamicStyles": {
-          "line-height": "1",
-          "padding-top": "0",
-          "padding-bottom": "0"
-        }
-      }
-    },
-    {
-      "key": "6mjmu",
-      "text": "C'erano inoltre tante Canadian Geese , Hering Gull, Black-backed Gulls and Ruddy Ducks.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 87,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {
-        "dynamicStyles": {
-          "line-height": "1",
-          "padding-top": "0",
-          "padding-bottom": "0"
-        }
-      }
-    },
-    {
-      "key": "cote9",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {
-        "dynamicStyles": {
-          "line-height": "1",
-          "padding-top": "0",
-          "padding-bottom": "0"
-        }
-      }
-    },
-    {
-      "key": "5ofn3",
-      "text": "E 1 procione",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 12,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {
-        "dynamicStyles": {
-          "line-height": "1",
-          "padding-top": "0",
-          "padding-bottom": "0"
-        }
-      }
-    },
-    {
-      "key": "86uoa",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {
-        "dynamicStyles": {
-          "line-height": "1",
-          "padding-top": "0",
-          "padding-bottom": "0"
-        }
-      }
-    },
-    {
-      "key": "4cui8",
-      "text": "The  Common Merganser ha un anello di plastica intorno a collo e becco, e  nel pomeriggio, ho cercato di aiutare Dave e una rappresentante di Bird  Wildlife Fund per catturarerla e riuscire a salvarla ma …senza successo.  Doami ci proveranno quelli di Conservancy. Speriamo con successo.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 287,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {
-        "dynamicStyles": {
-          "line-height": "1",
-          "padding-top": "0",
-          "padding-bottom": "0"
-        }
-      }
-    },
-    {
-      "key": "1qbjm",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {
-        "dynamicStyles": {
-          "line-height": "1",
-          "padding-top": "0",
-          "padding-bottom": "0"
-        }
-      }
-    },
-    {
       "key": "9vdim",
       "text": "Best regards,",
       "type": "unstyled",
@@ -964,7 +598,7 @@
         {
           "offset": 16,
           "length": 22,
-          "key": 5
+          "key": 3
         }
       ],
       "data": {
@@ -1042,7 +676,7 @@
         {
           "offset": 0,
           "length": 1,
-          "key": 6
+          "key": 4
         }
       ],
       "data": {}
@@ -1126,645 +760,6 @@
       "data": {}
     },
     {
-      "key": "c3sv4",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "b03m3",
-      "text": "Grey-hooded Gull at Coney Island, Brooklyn, August 2011",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 55,
-          "style": "ITALIC"
-        },
-        {
-          "offset": 0,
-          "length": 55,
-          "style": "{\"FG\":\"textColor4\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {
-        "textAlignment": "right"
-      }
-    },
-    {
-      "key": "h9ui",
-      "text": " ",
-      "type": "atomic",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [
-        {
-          "offset": 0,
-          "length": 1,
-          "key": 7
-        }
-      ],
-      "data": {}
-    },
-    {
-      "key": "d7efg",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "amavo",
-      "text": "The first of February (1982) brought a newcomer to the reservoir, an unusual duck for the park, a gadwall. A bird of fresh­ water marshes, a dabbler who likes to hide in reeds, this gadwall must have been another victim of the \"Siberian Express.\" The ice on the reservoir had now broken into drifts, exposing a large lake about one hundred yards long at the top end. The gadwall had arrived out of a blue sky during the mid-afternoon, and he joined two lesser scaups and a female ring-necked duck. The gadwall, mixing mottled gray and brown in its silky plumage, climbed from the water and promptly went to sleep on the ice alongside two mallards. Then the sound of a backfiring automobile spooked the mallards, and they shot into the air. The gad­ wall, smaller and lighter on the wing, went with them. The trio rose high to the east, making for the East River.During the first week of February more gulls came to the park than at any other time in the year. There must have been three thousand gulls each morning on the ice, screaming and mewing and causing a general commotion. One morning, seeing the gray ice turned white with gulls, a jog­ger shouted to me as he passed, \"It looks like an all-time convention. . . ,\" his words streaming behind him in freezing breath. I knew somewhere among this number must be an Iceland gull or a whole Hock of them, and maybe even the glaucous gull. The cold, however, drove me home each morning after I could study only a fraction of the gulls' number. I gave the park a miss for a week in early February, trying to cure winter influenza and my obsession with seeing an Iceland gull. Clearing the mailbox for the first time in days I found a letter from Lambert. It was the first he had sent me, and I regarded the letter as a token of strengthening friendship. In it was a carefully drawn pen and ink sketch of a winter finch, a redpoll, he had found in the park.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 1907,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "n8a6",
-      "text": "",
-      "type": "header-two",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "dpq82",
-      "text": "\"I could not reach you by phone,\" Lambert wrote. \"But other winter birders made the scene. One lowered the gas on the gravy she was cooking and took a cab. . . .\"",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 162,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "aucko",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "761eh",
-      "text": "The redpoll is a rare bird for the park and, although the letter was a week old, I rushed to the location given, a patch of birch trees on the west side of the park. Within fifteen minutes I had reached the spot, determined to make this my thirty-fourth species of the year. I worked the birch trees for a distance of about ten blocks directly opposite the American Museum of Natural History, and I found three redpolls in a European silver birch near the open air Delacorte Theater. The redpoll breeds in northern Canada and comes south to feed, mainly pecking at the hanging seedpods of birches. The female tends to be a dull finch, but in this threesome was a fine male: red crown, black chin and pinkish breast. The birds leaped from branch to branch, clinging upside down at times to reach the tassels containing the seeds. I was fortunate to find the redpolls and I thought my luck might be in for an Iceland gull. It had been an oyster gray day and the light was dying quickly. But a fiery, orange sun surprised its way through clustered shells of clouds, giving me time to reach the reservoir while the light was still good. A bird watcher I had not met before announced triumphantly that he had seen a good specimen of an adult Ice­ land gull. \"It moved about ten minutes ago,\" he said with a smile.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 1308,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "4a5ie",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {
-        "textAlignment": "right"
-      }
-    },
-    {
-      "key": "4b5qc",
-      "text": "Looking south to 59th St. from the Ramble on 15 March 2011",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 58,
-          "style": "ITALIC"
-        },
-        {
-          "offset": 0,
-          "length": 58,
-          "style": "{\"FG\":\"textColor4\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {
-        "textAlignment": "right"
-      }
-    },
-    {
-      "key": "2pumo",
-      "text": " ",
-      "type": "atomic",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [
-        {
-          "offset": 0,
-          "length": 1,
-          "key": 8
-        }
-      ],
-      "data": {}
-    },
-    {
-      "key": "eo5l6",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "2d5qm",
-      "text": "A woman with flaming auburn hair partly hidden by a bright green woolen hat flapped her arms, leaped into the air and careered across the tarmac of the car park in front of the boathouse. The auburn hair, the green hat, a khaki winter coat and flowing fawn scarf were lost in a blur of movement and color as about forty birders tried to focus binoculars on the woman, who was now scuttling up a slight rise toward the Ramble. \"Pretend I'm a blue jay,\" she shouted and about forty other people, without binoculars, giggled nervously. Lambert, sporting a feather from a great horned owl in a favorite bush hat, looked on approvingly and said to the crowd: \"I have a new friend from overseas who says the blue jay's New York's bird. It's showy and noisy like all the people in the city.\"",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 784,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "9mit0",
-      "text": "The dance ritual, performed by a birder named Sarah, traditionally precedes the first of four bird tours during the year. The intention is to give bird watchers practice in focusing binoculars that have been put away for the winter. But the ritual also serves to turn the bird walk into one of the park's numerous happenings or events, occasions on which the outsider can penetrate a different layer or sphere of New York life; in this case, the cult of bird watching.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 468,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "d3ejl",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "6gku2",
-      "text": "A thin, long line of heavily padded birders, and an equal number of people I suspected were going along to watch the bird watchers, took the winding path that leads to the Ramble, past a bag lady on a park bench who was airing her blankets in the sunshine. Like a subway train that stops abruptly, the line concertinaed at the feeder area, the first stop. The man who feeds the birds each winter, Bill Edgar, was raising replenished feeder bottles and cages, and he was pointed out to the walkers. Some raised binoculars for a closer look, even though he was only about twenty feet away.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 587,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "3guvk",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "dgmls",
-      "text": "\"Bill feeds the birds out of his own pocket, so to speak,\" said Sarah, shouting so that the people crowded at the end of the line could hear. \"Donations will be gratefully accepted.\" Quarters and the occasional dollar bill were pressed into Bill's hand. He then chased off a squirrel. \"Got to give the birds a chance,\" he said, as he pointed out that the feeder containers were suspended by thin strands of wire to deter squirrels from climbing down to raid them.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 463,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "3rt2t",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "f4lpk",
-      "text": "Looking West From Bow Bridge 15 February 2002",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 45,
-          "style": "ITALIC"
-        },
-        {
-          "offset": 0,
-          "length": 45,
-          "style": "{\"FG\":\"textColor4\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {
-        "textAlignment": "right"
-      }
-    },
-    {
-      "key": "5f9jv",
-      "text": " ",
-      "type": "atomic",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [
-        {
-          "offset": 0,
-          "length": 1,
-          "key": 9
-        }
-      ],
-      "data": {}
-    },
-    {
-      "key": "etcj2",
-      "text": "The concertina stretched out again as the line headed west over twisting paths, past a rustic shelter, through a stone viaduct and across the cast-iron bridge that crosses the Upper Lobe of the boat lake. Then the line stopped at the spot where the redpolls had been seen in previous days. \"First time redpolls found in the park in four years,\" shouted Lambert but the birders without binoculars could not possibly see the four-inch-long finches in the tops of the birches. North went the birders and the concertina expanded and contracted here and there, emitting \"oohs\" and \"ahs\" as the more spectacular birds were seen; a cardinal here, a blue jay there. By the time the reservoir was reached, about a mile and a half from the walk's starting point, the concertina had shrunk considerably. And halfway around the reservoir it was only a third of its original length. Strangely, it was the people without binoculars who were remaining and I surmised it was Sarah's antics that kept them going on the bitterly cold day. Lambert, with a missionary zeal to promote the wonders of birds, was trying desperately to kindle interest among the uninitiated, but the reservoir proved a disappointment. We saw only a lone scaup and a batch of mallards, and we heard Lambert's accounts of the thrill of rarities like the tufted duck all the way from Europe, and the magic of the Iceland gull: \"It's got snow-white mystique, it's the essence of. . . .\" The arrival of a canvasback stopped Lambert in mid-sentence. The duck hit the water clumsily, completely immersing itself for a second in the splash, rising, shaking its head. The bird sailed uneasily for the edge of the ice and with a desperate leap, summoning all the strength it had, the drake hauled himself clear of the water and left a smudge of oil on the ice. The whole of the bird's white underbody was coated in black oil and the drake tugged at his feathers, trying to preen itself.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 1935,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "5e34k",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "ddbjn",
-      "text": "\"He'll be dead by morning,\" said Lambert, and he looked away from the birders, remorseful that he should have showed them such a thing.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 135,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "f57rs",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "fhb0t",
-      "text": "By February the Chinese witch hazel started to bloom in a shady area behind the Cottage [Swedish] Puppet Theater on the west side. The witch hazel had tiny red flowers that promised the still far-off arrival of spring. All traces of the mid-January snowfall had melted now and a large tract of open water had split the ice on the reservoir in two. The vast numbers of gulls using the reservoir to bathe in early February had dispersed to other locations in New York City where fresh water had been released by the retreating ice. Many gulls had not made it through the cold spell and their bodies littered the reservoir surface where it was still frozen.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 654,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "73lgm",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "535u7",
-      "text": "Star of Bethlehem in the Ramble (Central Park) 26 April 2006",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 60,
-          "style": "ITALIC"
-        },
-        {
-          "offset": 0,
-          "length": 60,
-          "style": "{\"FG\":\"textColor4\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {
-        "textAlignment": "right"
-      }
-    },
-    {
-      "key": "eav85",
-      "text": " ",
-      "type": "atomic",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [
-        {
-          "offset": 0,
-          "length": 1,
-          "key": 10
-        }
-      ],
-      "data": {}
-    },
-    {
-      "key": "3dmkd",
-      "text": "Crows had gathered at the Fifty-ninth Street end of the park, like vultures. They clung to the outer branches of an oak overlooking the Pond, a crescent-shaped area of muddy water that fits snugly into the corner of Fifty-ninth Street and Fifth Avenue.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 252,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "4t8cc",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "d70hg",
-      "text": "Silently, without their familiar \"caw,\" they looked down at a young, ring-billed gull. The bird, in second-year mottled juvenile plumage, stood on the ice gasping, dazed. It swung its head about slowly and  two schoolboys, seeing the bird in trouble, walked to it across the solid ice that covered the Pond from shore to shore. The gull peered at them, reluctant to fly, but as they cautiously approached, the bird launched into the air in panic.  Its right wing had been ripped off at the wrist, the joint where primary wing feathers begin. With one sound wing and half a wing flapping wildly, the bird swung around in circles. It appeared the gull had been attacked by a dog and the crows were impatient for it to die. After about fifteen minutes one of the flock took off on broad, black wings and flew over the gull, settling on the ice about forty feet away from it. The gull fixed the crow with beady eye, pulling back its head to raise a stout but sharp-tipped bill. The crow, however, had time on its side. ",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 1015,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "eukln",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "820kn",
-      "text": "Sickened by crows and their summoning of doom, I left the Pond and went north to the reservoir in another hunt for the Iceland gull. I needed the illusion of pristine lands, of tundra and nights like days, to take my mind away from the injured, dying gull. But instead of finding a bird of the far north among the thousand or so gulls taking their siesta and afternoon bath at the reservoir, I found a young black-­backed [gull] shaking his head wildly. Stuck in this throat, and wrapped around his beak and head, was what appeared to be the plastic holder for a six-pack of beer. The plastic ensnarling the gull was part of the flotsam of winter piling up on the ice or in the water: a shattered green wine bottle spreading glass across the dirty ice, beer cans, broken, beer bottles, a black umbrella turned inside out, a school book -­ items that had been thrown or blown across the high fence. The gull was dead a few days later and the crows arrived first to pick at the carcass.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 984,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "fgars",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "bcfu1",
-      "text": "A horse was whinnying far away on the bridle path which runs between Turkey oaks in a wide circle around the reservoir. A rider, wearing traditional black equestrain cap, long black coat and polished boots with spurs, had pressed a bay into a gallop. The horse, steaming, came closer, and I noticed the bay and its rider were being watched by a silent, lonely figure I had often seen in the park. His head hidden in the hood of an anorak, the lone man stood under a pin oak on the west side in the Eighties, where he always stood. Sometimes the man had a home movie camera, sometimes not; sometimes he filmed, but I never determined precisely what he was filming. No camera on this cold and gray day. He just watched the steaming horse as it pulled toward the warmth of the stables just off the park.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 800,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "81kbv",
-      "text": "",
-      "type": "header-one",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "f750n",
-      "text": "Officially it was still winter, but I could smell spring on February 15th. An early morning silver sun brought temperatures to a high of fifty-seven degrees and the thawing ground released aromas of compost and humus: rich, sickly and sweet. There was another big concentration of gulls on the reservoir's ice and for a split second, in the blink of an eye, I thought I had seen the Iceland gull, a ghostly white shape among the grays and blacks of the other gulls. Before I could really study it, the bird vanished among the bickering, the preening and wallowing; a snowflake vanishing in a warm palm. I started to worry that my imagination might be running away with me. I had wanted to see this ethereal bird so much I may have been succumbing to fantasy. But it was an Iceland gull I had seen. I watched for another two hours, gave up, was heading out of the park, and then turned back for just one more look. In the long, central channel of open water between the ice floes I finally caught up with the bird. If I were an expert I could report that she -- I like to think of the bird as female -- was one of two subspecies that nests either in northeast Canada, or in Greenland. I could not determine the degree of gray in her wing­tips that would identify her origin, as I watched her frolic in the water, pulling  clear and then dunking her head again. She stretched lanky wings, shaking off droplets of water, and then flew away to join a group of herring gulls.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 1470,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "9kid4",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {
-        "textAlignment": "right"
-      }
-    },
-    {
-      "key": "c1q56",
-      "text": "59th street Pond (Central Park) in B/W Infra-red in June 2014",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 61,
-          "style": "{\"FG\":\"textColor4\"}"
-        },
-        {
-          "offset": 0,
-          "length": 61,
-          "style": "ITALIC"
-        }
-      ],
-      "entityRanges": [],
-      "data": {
-        "textAlignment": "right"
-      }
-    },
-    {
-      "key": "b7vjp",
-      "text": " ",
-      "type": "atomic",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [
-        {
-          "offset": 0,
-          "length": 1,
-          "key": 11
-        }
-      ],
-      "data": {}
-    },
-    {
-      "key": "albmc",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "4p8d4",
-      "text": "An unfamiliar sound rose off the reservoir, a sound that could not be drowned by the seaside cry of the herring gulls. A male canvasback let out a loud, resonant trill as he pursued a female through a maze of gulls. Because time for breeding is so short in the north-central United States and Canada, canvasbacks must court and pair in late winter so they can begin mating as soon as they arrive at their breeding grounds. The male scaups were soon to start wooing, too. But one bird would not make it north. Toward the end of February I saw the remains of a dead scaup, coated in oil, being buffeted against the wall of the reservoir.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 635,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "47cgg",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "b2e8o",
-      "text": "\"Man with large gun in the Ramble.\" The words were scrawled in the bird-sighting register at the boathouse and the regular park birders had formed a loose flock for protection. Lambert, now wearing a red-tailed hawk's feather in the band of his hat, led the way and most of the women in the group were tucked in tightly behind him. Lambert, a small but stocky man whom I estimated to be in his fifties, had grabbed a mugger with a gun a year previously in an unsuccessful attempt to wrestle the weapon away from the assailant. The mugger got away and Lambert now wished he could escape his reputation as Central Park's answer to the Guardian Angels subway vigilantes.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 667,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "dtg83",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "8tl87",
-      "text": "The birders defying the mugger as chickadees defy the blue jay at the feeder would not have missed anything if they had stayed at home on this dangerous day. The high-­pitched whine of a power saw, accompanied by the crash of trees hitting the ground, had driven the winter birds out of the Ramble and a sharp odor of sap and chewed bark filled the air. Extensive tree-cutting had been ordered by the Central Park administration as part of a wider program to introduce more light to the Ramble's glades and to create vistas incorporated in the original, 125 year-old plan for the park. After the trees had been felled it was possible to observe two landmarks, Bethesda Fountain and the Belvedere Castle, from any position on a straight line between them. But many of the park users were not impressed. In the spring a petition protesting the tree-cutting would gather three thousand signatures. Sheared trunks and amputated tree limbs formed the backdrop for a conflict between tree lovers and the New York Parks Department that dragged on for most of the year.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 1061,
-          "style": "{\"FG\":\"#040404\"}"
-        }
-      ],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
       "key": "48g4u",
       "text": "",
       "type": "unstyled",
@@ -1783,7 +778,7 @@
         {
           "offset": 0,
           "length": 1,
-          "key": 12
+          "key": 5
         }
       ],
       "data": {}
@@ -1882,12 +877,12 @@
         {
           "offset": 38,
           "length": 10,
-          "key": 13
+          "key": 6
         },
         {
           "offset": 56,
           "length": 14,
-          "key": 14
+          "key": 7
         }
       ],
       "data": {}
@@ -2989,9 +1984,10 @@
       "data": {
         "config": {
           "alignment": "center",
-          "size": "content",
+          "size": "inline",
           "showTitle": true,
-          "showDescription": true
+          "showDescription": true,
+          "width": 148
         },
         "src": {
           "id": "a27d24_f66f1d46f527431dba72620dcd8d4e08~mv2.jpg",
@@ -3015,40 +2011,12 @@
       "type": "LINK",
       "mutability": "MUTABLE",
       "data": {
-        "url": "mailto:rdcny@earthlink.net",
-        "target": "_top",
-        "rel": "noopener noreferrer"
-      }
-    },
-    "4": {
-      "type": "wix-draft-plugin-image",
-      "mutability": "IMMUTABLE",
-      "data": {
-        "config": {
-          "alignment": "center",
-          "size": "content",
-          "showTitle": true,
-          "showDescription": true
-        },
-        "src": {
-          "id": "d6bfaf_5c1ddc446fa34ccb9e5ac1fe3dd66b4c~mv2.jpg",
-          "original_file_name": "d6bfaf_5c1ddc446fa34ccb9e5ac1fe3dd66b4c~mv2.jpg",
-          "file_name": "d6bfaf_5c1ddc446fa34ccb9e5ac1fe3dd66b4c~mv2.jpg",
-          "width": 576,
-          "height": 336
-        }
-      }
-    },
-    "5": {
-      "type": "LINK",
-      "mutability": "MUTABLE",
-      "data": {
         "url": "http://www.critellisandra.com/",
         "target": "_blank",
         "rel": "nofollow"
       }
     },
-    "6": {
+    "4": {
       "type": "wix-draft-plugin-image",
       "mutability": "IMMUTABLE",
       "data": {
@@ -3068,103 +2036,7 @@
         }
       }
     },
-    "7": {
-      "type": "wix-draft-plugin-image",
-      "mutability": "IMMUTABLE",
-      "data": {
-        "config": {
-          "alignment": "center",
-          "size": "content",
-          "showTitle": true,
-          "showDescription": true
-        },
-        "src": {
-          "id": "d6bfaf_d31902359d914c1982759ab56f10751c~mv2.jpg",
-          "original_file_name": "d6bfaf_d31902359d914c1982759ab56f10751c~mv2.jpg",
-          "file_name": "d6bfaf_d31902359d914c1982759ab56f10751c~mv2.jpg",
-          "width": 936,
-          "height": 719
-        }
-      }
-    },
-    "8": {
-      "type": "wix-draft-plugin-image",
-      "mutability": "IMMUTABLE",
-      "data": {
-        "config": {
-          "alignment": "center",
-          "size": "content",
-          "showTitle": true,
-          "showDescription": true
-        },
-        "src": {
-          "id": "d6bfaf_0a5c30ee354d455aa3b0468b7e0c5158~mv2.jpg",
-          "original_file_name": "d6bfaf_0a5c30ee354d455aa3b0468b7e0c5158~mv2.jpg",
-          "file_name": "d6bfaf_0a5c30ee354d455aa3b0468b7e0c5158~mv2.jpg",
-          "width": 1080,
-          "height": 720
-        }
-      }
-    },
-    "9": {
-      "type": "wix-draft-plugin-image",
-      "mutability": "IMMUTABLE",
-      "data": {
-        "config": {
-          "alignment": "center",
-          "size": "inline",
-          "showTitle": true,
-          "showDescription": true,
-          "width": 364
-        },
-        "src": {
-          "id": "d6bfaf_0e720369645346a9b66964396eea94d8~mv2.jpg",
-          "original_file_name": "d6bfaf_0e720369645346a9b66964396eea94d8~mv2.jpg",
-          "file_name": "d6bfaf_0e720369645346a9b66964396eea94d8~mv2.jpg",
-          "width": 1080,
-          "height": 736
-        }
-      }
-    },
-    "10": {
-      "type": "wix-draft-plugin-image",
-      "mutability": "IMMUTABLE",
-      "data": {
-        "config": {
-          "alignment": "right",
-          "size": "small",
-          "showTitle": true,
-          "showDescription": true
-        },
-        "src": {
-          "id": "d6bfaf_7ceabd9785a44a9f95cfeca8effe5d3a~mv2.jpg",
-          "original_file_name": "d6bfaf_7ceabd9785a44a9f95cfeca8effe5d3a~mv2.jpg",
-          "file_name": "d6bfaf_7ceabd9785a44a9f95cfeca8effe5d3a~mv2.jpg",
-          "width": 720,
-          "height": 482
-        }
-      }
-    },
-    "11": {
-      "type": "wix-draft-plugin-image",
-      "mutability": "IMMUTABLE",
-      "data": {
-        "config": {
-          "alignment": "left",
-          "size": "small",
-          "showTitle": true,
-          "showDescription": true
-        },
-        "src": {
-          "id": "d6bfaf_ce114863862643e5be07af7be4fd9950~mv2.jpg",
-          "original_file_name": "d6bfaf_ce114863862643e5be07af7be4fd9950~mv2.jpg",
-          "file_name": "d6bfaf_ce114863862643e5be07af7be4fd9950~mv2.jpg",
-          "width": 1800,
-          "height": 658
-        }
-      }
-    },
-    "12": {
+    "5": {
       "type": "wix-draft-plugin-divider",
       "mutability": "IMMUTABLE",
       "data": {
@@ -3176,7 +2048,7 @@
         }
       }
     },
-    "13": {
+    "6": {
       "type": "LINK",
       "mutability": "MUTABLE",
       "data": {
@@ -3185,7 +2057,7 @@
         "rel": "noopener noreferrer"
       }
     },
-    "14": {
+    "7": {
       "type": "LINK",
       "mutability": "MUTABLE",
       "data": {
@@ -3195,5 +2067,5 @@
       }
     }
   },
-  "VERSION": "8.1.4"
+  "VERSION": "8.6.5"
 }

@@ -444,8 +444,27 @@ export const createBlock = (editorState: EditorState, data, type: string) => {
   const newBlock = newEditorState
     .getCurrentContent()
     .getBlockBefore(recentlyCreatedKey) as ContentBlock;
+
+  const newBlockKey = newBlock.getKey();
+  const editorStateCleanFromBlankExtraLines = handleExtraBlankLines(newEditorState, newBlockKey);
+
   const newSelection = SelectionState.createEmpty(newBlock.getKey());
-  return { newBlock, newSelection, newEditorState };
+  return { newBlock, newSelection, newEditorState: editorStateCleanFromBlankExtraLines };
+};
+
+const handleExtraBlankLines = (newEditorState, newBlockKey) => {
+  const blockBefore = newEditorState.getCurrentContent().getBlockBefore(newBlockKey);
+  const blockAfter = newEditorState.getCurrentContent().getBlockAfter(newBlockKey);
+
+  const editorStateWithoutEmptyBlockAfter = !isLastBlock(newEditorState, blockAfter.getKey())
+    ? deleteBlock(newEditorState, blockAfter.getKey())
+    : newEditorState;
+  const editorStateWithoutEmptyBlocks =
+    !isFirstBlock(editorStateWithoutEmptyBlockAfter, blockBefore.getKey()) &&
+    (blockBefore.getText() === '' || blockBefore.getText() === '​') //zero-width space (empty table cell)
+      ? deleteBlock(editorStateWithoutEmptyBlockAfter, blockBefore.getKey())
+      : editorStateWithoutEmptyBlockAfter;
+  return editorStateWithoutEmptyBlocks;
 };
 
 export const deleteBlock = (editorState: EditorState, blockKey: string) => {
@@ -845,4 +864,16 @@ export function selectAllContent(editorState, forceSelection) {
     : EditorState.acceptSelection;
   const newEditorState = setSelectionFunction(editorState, selection);
   return newEditorState;
+}
+
+function isFirstBlock(editorState: EditorState, blockKey: string) {
+  const blocks = editorState.getCurrentContent().getBlocksAsArray();
+  const firstBlock = blocks[0].getKey();
+  return firstBlock === blockKey;
+}
+
+function isLastBlock(editorState: EditorState, blockKey: string) {
+  const blocks = editorState.getCurrentContent().getBlocksAsArray();
+  const lastBlock = blocks[blocks.length - 1].getKey();
+  return lastBlock === blockKey;
 }

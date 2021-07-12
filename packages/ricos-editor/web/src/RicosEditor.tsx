@@ -130,6 +130,7 @@ export class RicosEditor extends Component<RicosEditorProps, State> {
   };
 
   onPublish = async () => {
+    await this.waitForUploadsToComplete();
     // TODO: remove this param after getContent(postId) is deprecated
     this.sendPublishBi((undefined as unknown) as string);
     console.debug('editor publish callback'); // eslint-disable-line
@@ -138,6 +139,16 @@ export class RicosEditor extends Component<RicosEditorProps, State> {
       data: await this.getContent(),
     };
   };
+
+  pollContentStateForUploads = resolve => {
+    const contentState = this.dataInstance.getEditorState().getCurrentContent();
+    if (!hasActiveUploads(contentState)) {
+      return resolve();
+    }
+    setTimeout(() => this.pollContentStateForUploads(resolve), 500);
+  };
+
+  waitForUploadsToComplete = () => new Promise(resolve => this.pollContentStateForUploads(resolve));
 
   publish = async () => {
     const publishResponse = await this.onPublish();

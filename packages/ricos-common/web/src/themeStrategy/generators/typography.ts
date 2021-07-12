@@ -19,7 +19,7 @@ export default function createTypography(typography?: RicosTheme['typography']):
   if (!typography) {
     return {};
   }
-  const { fontFamily, wixTypography } = typography;
+  const { wixTypography } = typography;
   const wixTypographyVars: CssVarsObject = wixTypography ? toVars(wixTypography) : {};
-  return Object.assign(wixTypographyVars, fontFamily && { fontFamily });
+  return wixTypographyVars;
 }

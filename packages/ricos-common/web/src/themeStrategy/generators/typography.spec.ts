@@ -14,10 +14,6 @@ describe('Typography', () => {
       input: { wixTypography: wixTypographyTestCase },
       output: expectedOutput,
     },
-    {
-      input: { fontFamily: 'Arial', wixTypography: wixTypographyTestCase },
-      output: { fontFamily: 'Arial', ...expectedOutput },
-    },
   ];
 
   it('should return empty object if typography is empty / undefined', () => {
@@ -27,18 +23,8 @@ describe('Typography', () => {
     expect(cssVars2).toEqual({});
   });
 
-  it('should apply fontFamily', () => {
-    const cssVars = createTypography(mocks[2].input);
-    expect(cssVars).toStrictEqual(mocks[2].output);
-  });
-
   it('should apply wixTypography', () => {
     const cssVars = createTypography(mocks[3].input);
     expect(cssVars).toStrictEqual(mocks[3].output);
-  });
-
-  it('should apply fontFamily & wixTypography', () => {
-    const cssVars = createTypography(mocks[4].input);
-    expect(cssVars).toStrictEqual(mocks[4].output);
   });
 });

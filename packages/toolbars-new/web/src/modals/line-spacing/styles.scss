@@ -1,0 +1,248 @@
+@import '~wix-rich-content-common/dist/statics/styles/palette';
+@import '~wix-rich-content-common/dist/statics/styles/mixins';
+
+.lineHeightsPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 0;
+  width: 143px;
+
+  * {
+    height: 36px;
+    border: none;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    background-color: transparent;
+
+    &:hover {
+      color: $settings-action-color-fallback;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: rgba($action-color-fallback-tuple, 0.1);
+    }
+
+    &:last-of-type {
+      text-align: center;
+      padding: 0;
+      margin-top: 8px;
+    }
+  }
+}
+
+.lineHeightsPanel_selectedLineHeight,
+.lineSpacingMobilePanel_selectedLineHeight {
+  color: $settings-action-color-fallback;
+}
+
+.lineSpacingMobilePanel_AlignContent {
+  padding-left: 20px;
+}
+
+.lineSpacingMobilePanel {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  //align-items: flex-start;
+  // padding: 16px 18px;
+  .lineSpacingMobilePanel_header {
+    @extend .lineSpacingMobilePanel_AlignContent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  // > * {
+  //   // margin: 11px 0;
+  // }
+
+  * {
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.lineSpacingMobilePanel_heights {
+  display: flex;
+  flex-direction: column;
+  * {
+    height: 39px;
+    flex: 1;
+    text-align: left;
+    padding: 0;
+    width: 100%;
+
+    &:active {
+      background-color: rgba($action-color-fallback-tuple, 0.1);
+    }
+
+    button {
+      @extend .lineSpacingMobilePanel_AlignContent;
+    }
+  }
+  }
+
+// .lineSpacingMobilePanel_buttons {
+//   display: flex;
+//   justify-content: space-between;
+
+//   * {
+//     padding: 0;
+//   }
+
+//   :nth-child(2) {
+//     color: $settings-action-color-fallback;
+//   }
+// }
+
+.customSpacingPanel {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  width: 230px;
+
+  > * {
+    margin: 16px 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin: 16px 12px 0 12px;
+    }
+  }
+
+  * {
+    font-size: 14px;
+    color: #333333;
+  }
+}
+
+.customSpacingPanel_mobile {
+  border-radius: unset;
+  width: unset;
+}
+
+.customSpacingPanel_labeledInput {
+  height: 36px;
+  line-height: 36px;
+  display: flex;
+  justify-content: space-between;
+
+  * {
+    font-size: 14px;
+  }
+
+  input {
+    width: 27px;
+    border: solid 1px rgba(51, 51, 51, 0.2);
+    padding-left: 12px;
+
+    &:focus {
+      border: solid 1px rgba(51, 51, 51, 0.5);
+    }
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.lineSpacing_separator {
+  height: 1px;
+  background-color: rgba(51, 51, 51, 0.2);
+  width: calc(100% - 24px);
+  margin: 0 auto;
+
+  @include phone {
+    width: 100%;
+  }
+}
+
+.customSpacingPanel_buttons {
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+
+  * {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: calc(50% - 6px);
+    color: $settings-action-color-fallback;
+  }
+
+  :nth-child(1) {
+    border: 1px solid $settings-action-color-fallback;
+  }
+
+  :nth-child(2) {
+    background-color: $settings-action-color-fallback;
+    color: $primary-text-color-light;
+  }
+}
+
+.lineSpacingContainer {
+  border: solid 1px #ededed;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.lineSpacingContainer_mobile {
+  border: solid 1px #ededed;
+  border-radius: unset;
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.05);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.lineSpacingModal {
+  position: fixed;
+  right: initial;
+  bottom: initial;
+  padding: 0;
+  background: #fff;
+}
+
+.lineSpacingModal_mobile {
+  border-radius: unset;
+  box-shadow: unset;
+}
+
+.lineSpacingModalOverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 40;
+}
+.lineSpacingModalOverlay_mobile {
+  //background-color: rgba(0, 0, 0, 0.2);
+}
+
+.lineSpacingPopup_button {
+  position: relative;
+  margin-right: 10px;
+  .lineSpacingPopup {
+    position: absolute;
+    top: 50px;
+    left: -146px;
+    background: #fff;
+
+    & button {
+      background-color: transparent;
+    }
+  }
+}

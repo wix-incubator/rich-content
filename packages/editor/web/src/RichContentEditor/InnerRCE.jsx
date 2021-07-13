@@ -144,6 +144,7 @@ class InnerRCE extends PureComponent {
   onFocus = e => {
     e.stopPropagation();
     this.ref && this.props.setEditorToolbars(this.ref);
+    // this.ref && this.props.setActiveEditor(this.ref);
     this.props.setInPluginEditingMode(true);
     if (!this.state.showToolbars) {
       this.setState({ showToolbars: true });
@@ -158,7 +159,8 @@ class InnerRCE extends PureComponent {
       !e.target.closest('[data-id=rich-content-editor-modal]') &&
       !e.target.closest('[class=ReactModalPortal]') &&
       !this.editorWrapper.contains(e.target) &&
-      !e.target.closest('[data-hook=table-plugin-cell]')
+      !e.target.closest('[data-hook=table-plugin-cell]') &&
+      !e.target.closest('[data-id="toolbar"]')
     ) {
       this.setState({ showToolbars: false });
     }
@@ -255,6 +257,7 @@ InnerRCE.propTypes = {
   onBackspaceAtBeginningOfContent: PropTypes.func,
   readOnly: PropTypes.bool,
   setEditorToolbars: PropTypes.func,
+  // setActiveEditor: PropTypes.func,
   setInPluginEditingMode: PropTypes.func,
   direction: PropTypes.string,
   toolbarsToIgnore: PropTypes.array,

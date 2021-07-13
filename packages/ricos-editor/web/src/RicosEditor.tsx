@@ -19,13 +19,31 @@ import {
   convertFromRaw,
   createWithContent,
 } from 'wix-rich-content-editor/libs/editorStateConversion';
-import { isEqual } from 'lodash';
+import { isEqual, get } from 'lodash';
 import {
   EditorEventsContext,
   EditorEvents,
 } from 'wix-rich-content-editor-common/libs/EditorEventsContext';
-import { ToolbarType, Version } from 'wix-rich-content-common';
-import { emptyDraftContent, getEditorContentSummary } from 'wix-rich-content-editor-common';
+import {
+  ToolbarType,
+  Version,
+  getLangDir,
+  TextButtons,
+  EditorCommands,
+} from 'wix-rich-content-common';
+import {
+  FloatingToolbarContainer,
+  Toolbar,
+  StaticToolbarContainer,
+} from 'wix-rich-content-toolbars-new';
+import 'wix-rich-content-toolbars-new/dist/styles.min.css';
+import {
+  emptyDraftContent,
+  getEditorContentSummary,
+  TOOLBARS,
+  isiOS,
+} from 'wix-rich-content-editor-common';
+import { mobileTextButtonList, desktopTextButtonList } from './';
 import { TiptapAPI } from 'wix-tiptap-editor';
 
 // eslint-disable-next-line
@@ -38,6 +56,7 @@ interface State {
   remountKey: boolean;
   editorState?: EditorState;
   initialContentChanged: boolean;
+  activeEditor?: RichContentEditor | null;
 }
 
 export class RicosEditor extends Component<RicosEditorProps, State> {
@@ -63,6 +82,7 @@ export class RicosEditor extends Component<RicosEditorProps, State> {
       localeData: { locale: props.locale },
       remountKey: false,
       initialContentChanged: true,
+      activeEditor: null,
     };
     this.useTiptap = !!props.experiments?.tiptapEditor?.enabled;
   }
@@ -87,6 +107,7 @@ export class RicosEditor extends Component<RicosEditorProps, State> {
       isMobile ? ToolbarType.MOBILE : useStaticTextToolbar ? ToolbarType.STATIC : ToolbarType.INLINE
     );
     this.props.editorEvents?.subscribe(EditorEvents.RICOS_PUBLISH, this.onPublish);
+    this.setState({ activeEditor: this.editor });
   }
 
   loadEditor() {
@@ -144,11 +165,11 @@ export class RicosEditor extends Component<RicosEditorProps, State> {
     return publishResponse.data;
   };
 
-  setStaticToolbar = ref => {
+  setActiveEditor = ref => {
     if (ref && ref !== this.currentEditorRef) {
       this.currentEditorRef = ref;
       const { MobileToolbar, TextToolbar } = ref.getToolbars();
-      this.setState({ StaticToolbar: MobileToolbar || TextToolbar });
+      this.setState({ StaticToolbar: MobileToolbar || TextToolbar, activeEditor: ref });
     }
   };
 
@@ -234,11 +255,118 @@ export class RicosEditor extends Component<RicosEditorProps, State> {
 
   setEditorRef = (ref: RichContentEditor) => {
     this.editor = ref;
-    this.setStaticToolbar(ref);
+    this.setActiveEditor(ref);
   };
 
   getEditorCommands = () =>
     this.useTiptap ? this.tiptapApi.getEditorCommands() : this.editor.getEditorCommands();
+
+  getT = () => this.editor.getT();
+
+  removeToolbarFocus = () => this.editor.removeToolbarFocus();
+
+  getPluginsKey = () => {
+    const { activeEditor } = this.state;
+    const rawPlugins = activeEditor?.getPlugins?.();
+    const plugins = rawPlugins.filter(plugin => plugin?.blockType !== undefined);
+    const pluginsKeys = plugins.map(plugin => plugin.blockType);
+    return pluginsKeys;
+  };
+
+  renderTextFormattingToolbar() {
+    const { activeEditor } = this.state;
+    if (activeEditor) {
+      const { buttons } = activeEditor.getToolbarProps(TOOLBARS.FORMATTING);
+      const { StaticToolbar } = this.state;
+      const {
+        isMobile,
+        theme,
+        locale,
+        toolbarSettings: { getToolbarSettings = () => [] } = {},
+        _rcProps: { helpers } = {},
+      } = this.props;
+      const buttonsAsArray = Object.values(buttons);
+      const editorCommands: EditorCommands = activeEditor.getEditorCommands();
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const selection = editorCommands.getSelection();
+      const showFormattingToolbar = !selection.getIsCollapsed && selection.getIsFocused;
+      const t = activeEditor.getT();
+      const removeToolbarFocus = () => activeEditor.removeToolbarFocus();
+      const textButtons: TextButtons = {
+        mobile: mobileTextButtonList,
+        desktop: desktopTextButtonList,
+      };
+      let toolbarType;
+      if (isMobile) {
+        toolbarType = 'MOBILE';
+      } else if (StaticToolbar) {
+        toolbarType = 'STATIC';
+      } else {
+        toolbarType = 'INLINE';
+      }
+      const formattingToolbarSetting = getToolbarSettings({ textButtons }).find(
+        toolbar => toolbar?.name === toolbarType
+      );
+      let formattingToolbarButtons;
+      if (formattingToolbarSetting?.getButtons) {
+        const allFormattingToolbarButtons = formattingToolbarSetting?.getButtons?.() as TextButtons;
+        const deviceName = !isMobile ? 'desktop' : isiOS() ? 'mobile.ios' : 'mobile.android';
+        formattingToolbarButtons = get(allFormattingToolbarButtons, deviceName, []);
+      } else {
+        formattingToolbarButtons = isMobile ? textButtons.mobile : textButtons.desktop;
+      }
+      const plugins: string[] = this.getPluginsKey();
+      const colorPickerData = {
+        TEXT_COLOR: this.props.plugins?.find(
+          plugin => plugin.type === 'wix-rich-content-text-color'
+        )?.config,
+        TEXT_HIGHLIGHT: this.props.plugins?.find(
+          plugin => plugin.type === 'wix-rich-content-text-highlight'
+        )?.config,
+      };
+      const linkPanelData = {
+        linkTypes: this.props.plugins?.find(plugin => plugin.type === 'LINK')?.config.linkTypes,
+        uiSettings: { linkPanel: this.props.linkPanelSettings },
+        anchorTarget: this.props.linkSettings?.anchorTarget,
+        isMobile,
+      };
+      const baseStyles = { flex: 'none' };
+      const baseMobileStyles = { ...baseStyles, position: 'sticky', top: 0, zIndex: 9 };
+      const ToolbarToRender = (
+        <Toolbar
+          theme={theme}
+          isMobile={isMobile}
+          t={t}
+          buttons={buttonsAsArray}
+          editorCommands={editorCommands}
+          formattingToolbarButtonsKeys={formattingToolbarButtons}
+          plugins={plugins}
+          linkPanelData={linkPanelData}
+          colorPickerData={colorPickerData}
+          helpers={helpers}
+          toolbarType={ToolbarType.FORMATTING}
+        />
+      );
+      // const textToolbarType = StaticToolbar && !isMobile ? 'static' : null;
+      const textToolbarType = StaticToolbar ? 'static' : null;
+      return textToolbarType === 'static' ? (
+        <div style={isMobile ? baseMobileStyles : baseStyles} dir={getLangDir(locale)}>
+          <StaticToolbarContainer isMobile={isMobile}>{ToolbarToRender}</StaticToolbarContainer>
+        </div>
+      ) : (
+        <div style={baseStyles} dir={getLangDir(locale)}>
+          <FloatingToolbarContainer
+            isMobile={isMobile}
+            showFormattingToolbar={showFormattingToolbar || false}
+            removeToolbarFocus={removeToolbarFocus}
+          >
+            {ToolbarToRender}
+          </FloatingToolbarContainer>
+        </div>
+      );
+    }
+    return null;
+  }
 
   renderToolbarPortal(Toolbar) {
     return (
@@ -264,7 +392,7 @@ export class RicosEditor extends Component<RicosEditorProps, State> {
       >
         {React.cloneElement(child, {
           editorKey: 'editor',
-          setEditorToolbars: this.setStaticToolbar,
+          setEditorToolbars: this.setActiveEditor,
           ...childProps,
           ...contentProp.editorState,
           ...supportedDraftEditorSettings,
@@ -283,9 +411,13 @@ export class RicosEditor extends Component<RicosEditorProps, State> {
       ) : (
         <RichContentEditor />
       );
+
+    const newFormattingToolbar = this.props.experiments?.newFormattingToolbar?.enabled;
+
     return (
       <Fragment key={`${remountKey}`}>
-        {this.renderToolbarPortal(StaticToolbar)}
+        {!newFormattingToolbar && this.renderToolbarPortal(StaticToolbar)}
+        {newFormattingToolbar && this.renderTextFormattingToolbar()}
         {this.renderRicosEngine(child, {
           onChange: this.onChange(child.props.onChange),
           ref: this.setEditorRef,

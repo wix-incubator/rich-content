@@ -1,0 +1,79 @@
+.toolbar {
+    width: fit-content;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 4px;
+    padding: 4px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.06);
+    border: solid 1px rgba(51, 51, 51, 0.1);
+    background-color: #ffffff;
+    border-radius: 2px;
+    font-size: 12px;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.vertical {
+        grid-auto-flow: row;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+    }
+
+    .separator {
+        height: 120%;
+        width: 1px;
+        background-color: #ededed;
+    }
+
+    .buttonWrapper {
+        display: inline-block;
+        position: relative; 
+    }
+    .modal {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.06);
+        border: solid 1px rgba(51, 51, 51, 0.1);
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 36px;
+        z-index: 10;
+        padding: 8px 0;
+        width: max-content;
+        min-width: 48px;
+        // &.alignModalCenter {
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        // }
+        // &.alignModalLeft {
+        //     left: 0;
+        // }
+        &.withoutTop {
+            top: 0;
+        }
+        &.linkPanelPadding {
+            padding: 0 19px;
+        }
+        &.withoutPadding {
+            padding: unset;
+        }
+        .contextMenuDivider {
+            height: 1px;
+            background-color: #e0e0e3;
+        }
+        &.groupButtonModal {
+            width: 100%;
+            min-width: unset;
+        }
+        &.colorPickerMobile {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: auto;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "wix-rich-content-toolbars-new",
+  "version": "8.46.5",
+  "author": {
+    "name": "Noam Tayri",
+    "email": "noamt@wix.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wix/ricos.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wix/ricos/issues"
+  },
+  "homepage": "https://github.com/wix/ricos/tree/master/rich-content-toolbars-new",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/module.cjs.js",
+  "types": "dist/src/index.d.ts",
+  "module": "dist/module.js",
+  "style": "dist/styles.min.scss",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "prebuild": "npm run clean",
+    "build:rollup": "rollup --environment MODULE_NAME:toolbars-new -c ../../../rollup.config.js",
+    "build": "npm run build:rollup && node ../../../scripts/cssFix.js",
+    "build:dev": "cross-env NODE_ENV=development npm run build",
+    "build:analyze:editor": "npm run build -- --environment MODULE_ANALYZE_EDITOR  && open stats.html",
+    "build:analyze:viewer": "npm run build -- --environment MODULE_ANALYZE_VIEWER && open stats.html",
+    "watch": "cross-env NODE_ENV=development MODULE_WATCH=1 npm run build:rollup -- --watch.chokidar",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx,d.ts}'",
+    "test": "jest --verbose"
+  },
+  "dependencies": {
+    "wix-rich-content-common": "8.46.5",
+    "wix-rich-content-editor-common": "8.46.5",
+    "wix-rich-content-plugin-commons": "8.46.5"
+  },
+  "unpkg": true,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "jest": {
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "testMatch": [
+      "**/?(*.)+(spec|test).+(ts|tsx|js)"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)?$": "ts-jest",
+      "^.+\\.(jsx|js)?$": "<rootDir>/../../../babel.jest.monorepo.js",
+      "\\.(svg)$": "<rootDir>/__mocks__/fileTransformer.js"
+    }
+  }
+}

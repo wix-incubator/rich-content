@@ -39,8 +39,15 @@ export interface ToolbarSettingsFunctions {
   onClick?: () => void;
 }
 
+export type TextGroupButtons = {
+  name: string;
+  buttons: string[];
+};
+
+export type DesktopTextButtons = (string | TextGroupButtons)[];
+
 export type TextButtons = {
-  desktop: string[];
+  desktop: DesktopTextButtons;
   mobile: string[];
 };
 
@@ -60,10 +67,10 @@ export type GetToolbarSettings = ({
   pluginButtonProps,
   tablePluginMenu,
 }: {
-  textButtons: TextButtons;
-  pluginButtons: PluginButton[];
-  pluginButtonNames: string[];
-  pluginTextButtons: PluginTextButtons;
-  pluginButtonProps: ToolbarButtonProps[];
+  textButtons?: TextButtons;
+  pluginButtons?: PluginButton[];
+  pluginButtonNames?: string[];
+  pluginTextButtons?: PluginTextButtons;
+  pluginButtonProps?: ToolbarButtonProps[];
   tablePluginMenu?: boolean;
 }) => ToolbarSettingsFunctions[];

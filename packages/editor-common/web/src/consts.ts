@@ -61,6 +61,7 @@ export const FORMATTING_BUTTONS = Object.freeze({
   UNDERLINE: 'Underline',
   TITLE: 'Title',
   BLOCKQUOTE: 'Blockquote',
+  ALIGNMENT: 'Alignment',
   ALIGN_LEFT,
   ALIGN_RIGHT,
   ALIGN_CENTER,

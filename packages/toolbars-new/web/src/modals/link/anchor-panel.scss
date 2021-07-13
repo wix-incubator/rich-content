@@ -1,0 +1,165 @@
+@import '~wix-rich-content-common/dist/statics/styles/palette';
+
+.AnchorPanel_Content {
+  width: 100%;
+  margin: 14px 1px 0px 1px;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.AnchorableElement_container {
+  display: flex;
+  padding: 4px 4px 4px 20px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .05);
+  }
+
+  &.AnchorableElement_selected {
+    background-color: rgba(0, 0, 0, .1);
+  }
+
+  .AnchorableElement_thumbnail {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+  }
+
+  .AnchorableElement_preview {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    display: none;
+  }
+
+  .AnchorableElement_contentContainer {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .AnchorableElement_contentType {
+      opacity: 0.4;
+      font-size: 12px;
+      line-height: 1.33;
+    }
+  
+    .AnchorableElement_blockContent {
+      font-size: 14px;
+      line-height: 1.43;
+      //TODO: fix the width
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 210px;
+    }
+  }
+}
+
+.AnchorPanel_header {
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  .AnchorPanel_title {
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.4;
+  }
+
+  .AnchorPanel_dropdownWrapper{}
+
+  .AnchorPanel_dropdownControl {
+    font-size: 14px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 38px;
+    padding: 0 30px 0 0 !important;
+  }
+
+  .AnchorPanel_dropdownMenu {
+    top: auto !important;
+    right: -20px;
+    position: absolute;
+    max-height: 204px;
+  }
+}
+
+.AnchorPanel_anchorsElementsContainer {
+  max-height: 227px;
+  overflow: auto;
+}
+// ::-webkit-scrollbar {
+//   display: none;
+// }
+
+.AnchorPanel_FilterDropdownElement {
+  font-size: 14px;
+  margin: 6px;
+}
+
+.AnchorPanel_emptyStateContainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 0 60px;
+
+  .AnchorPanel_emptyStateTitle{
+    font-size: 16px;
+    line-height: 1.5;
+    align-self: center;
+    text-align: center;
+  }
+
+  .AnchorPanel_emptyStateText{
+    opacity: 0.4;
+    font-size: 16px;
+    line-height: 1.5;
+    align-self: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .AnchorableElement_container {
+    padding: 4px;
+  }
+
+  .AnchorPanel_Content {
+    margin: 10px 1px 0;
+  }
+  
+  .AnchorPanel_header {
+    margin-left: 0;
+    margin-bottom: 7px;
+  }
+
+  .AnchorPanel_emptyStateContainer {
+    align-self: flex-start;
+    margin: 80px 35px 0 35px;
+  
+    .AnchorPanel_emptyStateTitle{
+      font-size: 14px;
+    }
+  
+    .AnchorPanel_emptyStateText{
+      font-size: 14px;
+    }
+  }
+
+  .AnchorPanel_anchorsElementsContainer {
+    max-height: 100%;
+  }
+}

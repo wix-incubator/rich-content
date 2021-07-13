@@ -69,6 +69,8 @@ import {
   UNSUPPORTED_BLOCKS_TYPE,
   RICOS_LINK_TYPE,
   RICOS_MENTION_TYPE,
+  RICOS_INDENT_TYPE,
+  RICOS_LINE_SPACING_TYPE,
 } from 'ricos-content';
 import {
   DividerData,

@@ -50,7 +50,8 @@
     "wix-rich-content-common": "8.46.9",
     "wix-rich-content-editor": "8.46.9",
     "wix-rich-content-editor-common": "8.46.9",
-    "wix-tiptap-editor": "8.46.9"
+    "wix-tiptap-editor": "8.46.9",
+    "wix-rich-content-toolbars-new": "8.46.9"
   },
   "jest": {
     "globals": {

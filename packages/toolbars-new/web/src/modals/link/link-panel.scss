@@ -1,0 +1,134 @@
+@import '~wix-rich-content-common/dist/statics/styles/palette';
+@import '~wix-rich-content-common/dist/statics/styles/fonts';
+
+.linkPanel_overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+.linkPanel_container {
+  font-family: $ricos-font-family;
+  color: black;
+  position: relative;
+  min-width: 360px;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.linkPanel_container_isMobile {
+  position:fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 0;
+  min-width: 0;
+}
+
+.linkPanel_content {
+  padding: 0 23px;
+}
+
+.linkPanel_Content {
+  margin: 0px 1px;
+  padding-bottom: 6px;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.linkPanel_Input {
+  // margin: 16px 0 14px 0; // this is the right margin - once radio buttons would be added back
+  margin: 5px 0 13px 0;
+  position: relative;
+}
+.checkboxesContainer {
+  margin-left: 0;
+}
+
+.linkPanel_textInput,
+.linkPanel_dropdownList {
+  color: $modal-input-color;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+
+  &:focus,
+  &:focus + .linkPanel_dropdownList {
+    border: 1px solid rgba(51, 51, 51, 0.5);
+  }
+}
+
+.linkPanel_textInput {
+  height: 42px;
+  padding: 0 18px;
+  text-align: left;
+  box-sizing: border-box;
+
+  &::placeholder {
+    opacity: 0.4;
+  }
+}
+
+.linkPanel_dropdownList {
+  position: absolute;
+  border-top: none;
+}
+
+.linkPanel_textInput_invalid {
+  border: 1px solid red !important;
+}
+
+.linkPanel_imageSettings {
+  width: 100%;
+  height: 42px;
+  padding: 0 17px;
+  color: #333333;
+  border: 1px solid #ededed;
+}
+
+.linkPanel_errorIcon {
+  position: absolute;
+  right: 12px;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 13px;
+}
+
+.linkPanel_actionsDivider {
+  margin: 0 4px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+.mobileLinkModal_titleContainer {
+  display: flex;
+  padding: 12px 22px 20px;
+}
+
+.mobileLinkModal_linkIconContainer {
+  width: 19px;
+  height: 19px;
+  margin-right: 11px;
+}
+
+.mobileLinkModal_title {
+  margin: 0;
+  font-size: 16px;
+}

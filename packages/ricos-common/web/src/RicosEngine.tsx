@@ -89,7 +89,6 @@ export class RicosEngine extends Component<EngineProps> {
       placeholder,
       content,
       RicosModal,
-      onError,
       mediaSettings = {},
       linkSettings = {},
       linkPanelSettings = {},
@@ -163,7 +162,6 @@ export class RicosEngine extends Component<EngineProps> {
       },
       initialState: previewContent || content,
       placeholder,
-      onError,
       helpers: {
         openModal,
         closeModal,

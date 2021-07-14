@@ -1,4 +1,4 @@
-import { identity, flow } from 'fp-ts/lib/function';
+import { identity, flow } from 'fp-ts/function';
 
 // TODO: improve types
 /* eslint-disable @typescript-eslint/no-explicit-any */

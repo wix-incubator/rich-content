@@ -56,7 +56,8 @@
   - [#2684](https://github.com/wix-incubator/rich-content/pull/2684) BM's top toolbar overrides Ricos Modal
 
 ### :house: Internal
-
+- `ui-components`
+  - [#2643](https://github.com/wix-incubator/rich-content/pull/2643) moved ActionButtons into ui-components and some code refactor
 - `*`
   - [#2697](https://github.com/wix/ricos/pull/2697) console.error when viewer/editor have error
 

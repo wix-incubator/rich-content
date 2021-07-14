@@ -1,5 +1,4 @@
 import { Node, Node_Type } from 'ricos-schema';
-import { getImageSrc } from '../../../imageUtils';
 import { LINK_TYPE } from '../../../consts';
 import { mergeTextNodes, RangedDecoration } from '../../draft/toDraft/decorationParsers';
 
@@ -56,15 +55,7 @@ export const parseImage = async (
 ): Promise<string> => {
   const { caption } = imageData || {};
   const { src, width, height } = imageData?.image || {};
-  const imageUrlOptions = Object.assign(
-    {
-      imageType: 'highRes',
-      requiredQuality: 90,
-    },
-    width && { requiredWidth: width },
-    height && { requiredHeight: height }
-  );
-  let url: string = getImageSrc({ file_name: src?.custom }, undefined, imageUrlOptions);
+  let url = `https://static.wixstatic.com/media/${src?.custom?.replace('media/', '')}`;
   if (urlShortener) {
     url = await urlShortener(url);
   }

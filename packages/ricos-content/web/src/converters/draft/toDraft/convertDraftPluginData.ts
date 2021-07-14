@@ -13,6 +13,7 @@ import {
   FileData,
   ButtonData,
   LinkData,
+  GalleryData,
 } from 'ricos-schema';
 import { cloneDeep, has } from 'lodash';
 import {
@@ -57,6 +58,7 @@ export const convertNodeDataToDraft = (nodeType: Node_Type, data) => {
     [Node_Type.HTML]: convertHTMLData,
     [Node_Type.MAP]: convertMapData,
     [Node_Type.EMBED]: convertEmbedData,
+    [Node_Type.GALLERY]: convertGalleryData,
   };
   if (newData.containerData && nodeType !== Node_Type.DIVIDER) {
     convertContainerData(newData, nodeType);
@@ -148,6 +150,44 @@ const convertDividerData = (
     delete data.alignment;
   }
   delete data.containerData;
+};
+
+const convertGalleryStyles = styles => {
+  has(styles, 'layout') && (styles.galleryLayout = styles.layout);
+  has(styles, 'itemTargetSize') && (styles.gallerySizePx = styles.itemTargetSize);
+  has(styles, 'horizontalScroll') && (styles.oneRow = styles.horizontalScroll);
+  has(styles, 'itemRatio') && (styles.cubeRatio = styles.itemRatio);
+  has(styles, 'layoutOrientation') && (styles.isVertical = styles.layoutOrientation === 'vertical');
+  has(styles, 'imagesPerRow') && (styles.numberOfImagesPerRow = styles.imagesPerRow);
+  has(styles, 'itemCrop') && (styles.cubeType = styles.itemCrop);
+  has(styles, 'thumbnailsAlignment') &&
+    (styles.galleryThumbnailsAlignment = styles.thumbnailsAlignment);
+  delete styles.layout;
+  delete styles.itemTargetSize;
+  delete styles.itemRatio;
+  delete styles.layoutOrientation;
+  delete styles.imagesPerRow;
+  delete styles.itemCrop;
+  delete styles.thumbnailsAlignment;
+  delete styles.horizontalScroll;
+  return styles;
+};
+
+const convertGalleryData = (
+  data: GalleryData & {
+    styles: {
+      galleryLayout;
+      gallerySizePx;
+      oneRow;
+      cubeRatio;
+      isVertical;
+      numberOfImagesPerRow;
+      cubeType;
+      galleryThumbnailsAlignment;
+    };
+  }
+) => {
+  has(data, 'styles') && (data.styles = convertGalleryStyles(data.styles));
 };
 
 const convertImageData = (data: ImageData & { src; config; metadata }) => {

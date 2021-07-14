@@ -15,45 +15,26 @@ message GalleryData {
 }
 
 message GalleryStyles {
-  google.protobuf.Int32Value gallery_layout = 1;
-  google.protobuf.StringValue gallery_size_type = 2;
-  google.protobuf.Int32Value gallery_size_px = 3;
-  google.protobuf.BoolValue one_row = 4;
-  google.protobuf.DoubleValue cube_ratio = 5;
-  google.protobuf.StringValue gallery_thumbnails_alignment = 6;
-  google.protobuf.BoolValue is_vertical = 7;
-  google.protobuf.Int32Value number_of_images_per_row = 8;
-  google.protobuf.Int32Value image_margin = 9;
+  // galleryLayout
+  google.protobuf.Int32Value layout = 1;
+  // gallerySizePx
+  google.protobuf.Int32Value item_target_size = 2;
+  // oneRow
+  google.protobuf.BoolValue horizontal_scroll = 3;
+  // cubeRatio
+  google.protobuf.DoubleValue item_ratio = 4;
+  // isVertical - bool
+  google.protobuf.StringValue layout_orientation = 5;
+  // numberOfImagesPerRow
+  google.protobuf.Int32Value images_per_row = 6;
+  google.protobuf.Int32Value image_margin = 7;
+  // cubeType
+  google.protobuf.StringValue item_crop = 8;
+  // related to thumbnails layout only
+  // galleryThumbnailsAlignment
+  google.protobuf.StringValue thumbnails_alignment = 9;
+  // thumbnailSpacings
   google.protobuf.Int32Value thumbnail_spacings = 10;
-  google.protobuf.StringValue cube_type = 11;
-  google.protobuf.BoolValue enable_infinite_scroll = 12;
-  google.protobuf.StringValue title_placement = 13;
-  google.protobuf.BoolValue allow_hover = 14;
-  google.protobuf.StringValue item_click = 15;
-  google.protobuf.BoolValue show_arrows = 16;
-  google.protobuf.Int32Value grid_style = 17;
-  google.protobuf.BoolValue love_button = 18;
-  google.protobuf.BoolValue allow_social = 19;
-  google.protobuf.BoolValue allow_download = 20;
-  google.protobuf.BoolValue cube_images = 21;
-  google.protobuf.Int32Value group_size = 22;
-  google.protobuf.StringValue group_types = 23;
-  google.protobuf.Int32Value fixed_columns = 24;
-  google.protobuf.BoolValue has_thumbnails = 25;
-  google.protobuf.BoolValue enable_scroll = 26;
-  google.protobuf.BoolValue is_grid = 27;
-  google.protobuf.BoolValue is_slider = 28;
-  google.protobuf.BoolValue is_columns = 29;
-  google.protobuf.BoolValue is_slideshow = 30;
-  google.protobuf.BoolValue crop_only_fill = 31;
-  google.protobuf.Int32Value gallery_margin = 32;
-  google.protobuf.BoolValue fullscreen = 33;
-  google.protobuf.StringValue mobile_swipe_animation = 34;
-  google.protobuf.Int32Value thumbnail_size = 35;
-  google.protobuf.BoolValue got_style_params = 36;
-  google.protobuf.BoolValue show_video_play_button = 37;
-  google.protobuf.StringValue video_play = 38;
-  google.protobuf.StringValue gallery_type = 39;
 }
 
 message GalleryConfig {
@@ -64,10 +45,13 @@ message GalleryConfig {
 }
 
 message GalleyItemMetadata {
-  google.protobuf.Int32Value height = 1;
-  google.protobuf.Int32Value width = 2;
+  google.protobuf.Int32Value width = 1;
+  google.protobuf.Int32Value height = 2;
   google.protobuf.StringValue title = 3;
-  google.protobuf.StringValue type = 4;
+  google.protobuf.StringValue altText = 4;
+  Link link = 5;
+  google.protobuf.StringValue type = 6;
+  Media thumbnail = 7;
 }
 
 message GalleryItem {

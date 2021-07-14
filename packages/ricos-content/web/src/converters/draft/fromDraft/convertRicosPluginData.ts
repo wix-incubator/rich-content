@@ -15,6 +15,7 @@ import {
   MAP_TYPE,
   EMBED_TYPE,
   LINK_TYPE,
+  GALLERY_TYPE,
 } from '../../../consts';
 import {
   PluginContainerData_Spoiler,
@@ -49,6 +50,7 @@ export const convertBlockDataToRicos = (type: string, data) => {
     [MAP_TYPE]: convertMapData,
     [EMBED_TYPE]: convertEmbedData,
     [LINK_TYPE]: convertLinkData,
+    [GALLERY_TYPE]: convertGalleryData,
   };
   let blockType = type;
   if (type === LINK_PREVIEW_TYPE && data.html) {
@@ -110,6 +112,36 @@ const convertVideoData = (data: {
       height: data.src.thumbnail.height,
     };
   }
+};
+
+const convertGalleryStyles = styles => {
+  has(styles, 'galleryLayout') && (styles.layout = styles.galleryLayout);
+  has(styles, 'gallerySizePx') && (styles.itemTargetSize = styles.gallerySizePx);
+  has(styles, 'oneRow') && (styles.horizontalScroll = styles.oneRow);
+  has(styles, 'cubeRatio') && (styles.itemRatio = styles.cubeRatio);
+  has(styles, 'isVertical') &&
+    (styles.layoutOrientation = styles.isVertical ? 'vertical' : 'horizontal');
+  has(styles, 'numberOfImagesPerRow') && (styles.imagesPerRow = styles.numberOfImagesPerRow);
+  has(styles, 'cubeType') && (styles.itemCrop = styles.cubeType);
+  has(styles, 'galleryThumbnailsAlignment') &&
+    (styles.thumbnailsAlignment = styles.galleryThumbnailsAlignment);
+  return styles;
+};
+
+const convertGalleryItem = (item: { metadata; type }) => {
+  if (item.metadata.type === 'video' && typeof item.metadata.thumbnail === 'string') {
+    item.metadata.thumbnail = {
+      url: item.metadata.thumbnail,
+      height: item.metadata.height,
+      width: item.metadata.width,
+    };
+  }
+  return item;
+};
+
+const convertGalleryData = (data: { items; styles }) => {
+  has(data, 'items') && (data.items = data.items.map(item => convertGalleryItem(item)));
+  has(data, 'styles') && (data.styles = convertGalleryStyles(data.styles));
 };
 
 const convertDividerData = (data: {

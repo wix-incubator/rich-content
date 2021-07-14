@@ -1,5 +1,5 @@
 import { ImageComponentData, VideoComponentData } from 'wix-rich-content-common';
-import { GALLERY_LAYOUTS } from '../lib/layout-data-provider';
+import { GALLERY_LAYOUTS, layoutData } from '../lib/layout-data-provider';
 
 /* eslint-disable camelcase */
 
@@ -32,32 +32,8 @@ export const sampleItems = [1, 2, 3].map(i => {
 export const DEFAULTS = Object.freeze({
   items: [],
   styles: {
-    galleryLayout: 2,
-    gallerySizeType: 'px',
-    gallerySizePx: 300,
-    galleryMargin: 0,
-    oneRow: false,
-    cubeRatio: 1,
-    galleryThumbnailsAlignment: 'bottom',
-    isVertical: false,
-    imageMargin: 5,
-    thumbnailSpacings: 0,
-    cubeType: 'fill',
-    enableInfiniteScroll: true,
-    titlePlacement: 'SHOW_ON_HOVER',
-    allowHover: true,
-    itemClick: 'link',
-    fullscreen: false,
-    showArrows: false,
-    gridStyle: 1,
-    loveButton: false,
-    allowSocial: false,
-    allowDownload: false,
-    mobileSwipeAnimation: 'NO_EFFECT',
-    thumbnailSize: 120,
-    gotStyleParams: true,
-    showVideoPlayButton: true,
-    videoPlay: 'onClick',
+    galleryLayout: GALLERY_LAYOUTS.GRID,
+    ...layoutData[GALLERY_LAYOUTS.GRID],
   },
   config: {
     alignment: 'center',
@@ -66,6 +42,69 @@ export const DEFAULTS = Object.freeze({
     spacing: 0,
   },
 });
+
+export const LAYOUT_FIXED_STYLES = {
+  [GALLERY_LAYOUTS.COLLAGE]: {
+    galleryType: 'Columns',
+    imageMargin: 5,
+  },
+  [GALLERY_LAYOUTS.MASONRY]: {
+    imageMargin: 5,
+    isVertical: false,
+    gridStyle: 0,
+  },
+  [GALLERY_LAYOUTS.GRID]: {
+    imageResize: false,
+    gridStyle: 1,
+    galleryImageRatio: 2,
+    imageMargin: 5,
+  },
+  [GALLERY_LAYOUTS.THUMBNAIL]: {
+    arrowsSize: 23,
+    thumbnailSize: 120,
+    floatingImages: 0,
+  },
+  [GALLERY_LAYOUTS.SLIDER]: {
+    arrowsSize: 23,
+    imageMargin: 5,
+  },
+  [GALLERY_LAYOUTS.SLIDESHOW]: {
+    arrowsSize: 23,
+    floatingImages: 0,
+    slideshowInfoSize: 0,
+  },
+  [GALLERY_LAYOUTS.PANORAMA]: {
+    hasThumbnails: false,
+    imageMargin: 5,
+  },
+  [GALLERY_LAYOUTS.COLUMN]: {
+    arrowsSize: 23,
+    hasThumbnails: false,
+    imageMargin: 5,
+  },
+  [GALLERY_LAYOUTS.FULLSIZE]: {
+    arrowsSize: 23,
+    floatingImages: 0,
+    slideshowInfoSize: 0,
+  },
+};
+
+export const FIXED_STYLES = {
+  gallerySizeType: 'px',
+  enableInfiniteScroll: true,
+  titlePlacement: 'SHOW_ON_HOVER',
+  allowHover: true,
+  itemClick: 'link',
+  fullscreen: false,
+  loveButton: false,
+  allowSocial: false,
+  allowDownload: false,
+  mobileSwipeAnimation: 'NO_EFFECT',
+  thumbnailSize: 120,
+  gotStyleParams: true,
+  showVideoPlayButton: true,
+  videoPlay: 'onClick',
+};
 
 export const createImageItem = (
   img: ImageComponentData & HTMLImageElement,

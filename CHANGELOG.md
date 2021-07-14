@@ -17,6 +17,11 @@
     Click to see more.
   </summary>
 
+### :bug: Bug Fix
+
+- `image`
+  - [#2716](https://github.com/wix/ricos/pull/2716) fix image caption clipping in editor
+
 </details>
 <hr/>
 

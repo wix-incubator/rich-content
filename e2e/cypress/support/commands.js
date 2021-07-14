@@ -443,7 +443,7 @@ Cypress.Commands.add('addImageTitle', () => {
 
 Cypress.Commands.add('editImageTitle', () => {
   cy.get(`[data-hook=${PLUGIN_COMPONENT.IMAGE}]:first`)
-    .find('input')
+    .find('textarea')
     .click()
     .type(' - In Plugin Editing')
     .blur();
